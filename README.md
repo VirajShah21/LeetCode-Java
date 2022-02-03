@@ -14,6 +14,22 @@ I modified the previous solution to skip finding all possible anagrams. Let's sa
 Replaced the `isAnagram(String, String)` method with a simpler implementation. Since all characters are lowercase letters, there are `26` possible characters. Each index maps to a character from `a` to `z`. Then by iterating through `s1`, we increment each index when the corresponding character is encountered. Then by iterating through `s2`, we decrement each index when the corresponding character is encountered. If the two strings are anagrams, then all values should be exactly `0`.
 
 ```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Solution {
+    public List<Integer> findAnagrams(String s, String p) {
+        List<Integer> indices = new ArrayList<>();
+
+        for (int i = 0; i < s.length() - p.length() + 1; i++) {
+            if (isAnagram(s.substring(i, i + p.length()), p)) {
+                indices.add(i);
+            }
+        }
+
+        return indices;
+    }
+
     private boolean isAnagram(String s1, String s2) {
         if (s1.equals(s2))
             return true;
@@ -27,6 +43,7 @@ Replaced the `isAnagram(String, String)` method with a simpler implementation. S
                 return false;
         return true;
     }
+}
 ```
 
 > Runtime: 1514 ms, faster than 5.52% of Java online submissions for Find All Anagrams in a String.
