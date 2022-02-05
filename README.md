@@ -129,3 +129,9 @@ class Solution {
 > Runtime: 102 ms, faster than 40.96% of Java online submissions for Most Beautiful Item for Each Query.
 >
 > Memory Usage: 141.2 MB, less than 12.92% of Java online submissions for Most Beautiful Item for Each Query.
+
+## 1847: Closest Room
+
+> https://leetcode.com/problems/closest-room/
+
+**Solution 1**
