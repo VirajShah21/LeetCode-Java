@@ -135,3 +135,17 @@ class Solution {
 > https://leetcode.com/problems/closest-room/
 
 **Solution 1**
+
+Could not find an efficient solution
+
+## 23: Merge Sorted List
+
+> https://leetcode.com/problems/merge-k-sorted-lists/
+
+**Solution 1**
+
+This algorithm is a minimum-select algorithm. Given `n` sorted linked-lists, the resulting root is determined by comparing all of the first elements of each linked list. The next element in the resultant list is found by running the same algorithm, replacing `lists[i]` with `lists[i].next`.
+
+> Runtime: 374 ms, faster than 5.02% of Java online submissions for Merge k Sorted Lists.
+>
+> Memory Usage: 48 MB, less than 5.33% of Java online submissions for Merge k Sorted Lists.
