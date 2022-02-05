@@ -1,16 +1,18 @@
 # LeetCode-Java
 
+![](LeetCode.png)
+
 I usually solve math problems in Python, but I thought to myself, "how can I make my life harder?"... and I found the solution: Solve LeetCode problems using Java
 
 ## Problem 438: Anagrams
 
-**First Solution**
+🆇 **First Solution**
 First I wrote a program which finds all permutations of `p`, then searches for all occurences of each of the anagrams in the base string `s`. This solution was not efficient because it too long to generate all permutations of very long strings.
 
-**Second Solution**
+🆇 **Second Solution**
 I modified the previous solution to skip finding all possible anagrams. Let's say the length of `p` is `n`. Then we check each substring of `s` of length `n` (`0` to `n`, `1` to `n+1`, etc). For each substring, we check if `s.substring(i, i + n)` is an anagram of `p`; that is, do they share the same character counts. This solution is not efficient because for extremely large input sizes for either `s` or `p`, counting characters and substringing takes significant time.
 
-**Third Solution**
+✅ **Third Solution**
 Replaced the `isAnagram(String, String)` method with a simpler implementation. Since all characters are lowercase letters, there are `26` possible characters. Each index maps to a character from `a` to `z`. Then by iterating through `s1`, we increment each index when the corresponding character is encountered. Then by iterating through `s2`, we decrement each index when the corresponding character is encountered. If the two strings are anagrams, then all values should be exactly `0`.
 
 ```java
@@ -54,7 +56,7 @@ public class Solution {
 
 > [🔗 Most Beautiful Item for Each Query on LeetCode](https://leetcode.com/problems/most-beautiful-item-for-each-query/)
 
-**Solution 1**
+🆇 **Solution 1**
 
 This is a straightforward solution, however, it is not efficient enough. When dealing with large integers and a large input size, the LeetCode time limit is exceeded.
 
@@ -77,7 +79,7 @@ class Solution {
 }
 ```
 
-**Solution 2**
+✅ **Solution 2**
 
 I realized that this method would just always take way too long because it has O(n\*i) time. This is bad for a problem which scales so largely. So then I decided to use a hashmap to build a map which increasingly assigns maximum beauty, similar to a napsack problem. Then we add all the queries which do not have a key in the `pToB` map. Then we fill them in by iterating over the sorted keyset and giving all unfilled queries in the map the same value as the previous key.
 
