@@ -49,3 +49,83 @@ public class Solution {
 > Runtime: 1514 ms, faster than 5.52% of Java online submissions for Find All Anagrams in a String.
 >
 > Memory Usage: 43.5 MB, less than 54.76% of Java online submissions for Find All Anagrams in a String.
+
+## Problem 2070: Most Beautiful Item for Each Query
+
+> [🔗 Most Beautiful Item for Each Query on LeetCode](https://leetcode.com/problems/most-beautiful-item-for-each-query/)
+
+**Solution 1**
+
+This is a straightforward solution, however, it is not efficient enough. When dealing with large integers and a large input size, the LeetCode time limit is exceeded.
+
+```java
+class Solution {
+    public int[] maximumBeauty(int[][] items, int[] queries) {
+        int[] res = new int[queries.length];
+
+        for (int i = 0; i < queries.length; i++) {
+            int n = queries[i];
+            int max = 0;
+            for (int[] item : items)
+                if (item[0] <= n && item[1] > max)
+                    max = item[1];
+            res[i] = max;
+        }
+
+        return res;
+    }
+}
+```
+
+**Solution 2**
+
+I realized that this method would just always take way too long because it has O(n\*i) time. This is bad for a problem which scales so largely. So then I decided to use a hashmap to build a map which increasingly assigns maximum beauty, similar to a napsack problem. Then we add all the queries which do not have a key in the `pToB` map. Then we fill them in by iterating over the sorted keyset and giving all unfilled queries in the map the same value as the previous key.
+
+```java
+class Solution {
+    public int[] maximumBeauty(int[][] items, int[] queries) {
+        Arrays.sort(items, (a, b) -> a[0] - b[0]);
+        // Price to (Maximum) Beauty map
+        Map<Integer, Integer> pToB = new HashMap<>();
+        pToB.put(0, 0);
+
+        // The most maximum beauty acheived so far in sorted items
+        int maxBeauty = 0;
+
+        // Iterate through each item and assign a max beauty
+        for (int[] item : items) {
+            maxBeauty = Math.max(maxBeauty, item[1]);
+            pToB.put(item[0], maxBeauty);
+        }
+
+        // Iterate through each query and check if is already assigned
+        for (int q : queries)
+            if (pToB.get(q) == null)
+                pToB.put(q, -1);
+
+        Set<Integer> keyset = pToB.keySet();
+        int[] keylist = new int[keyset.size()];
+        int i = 0;
+        for (int n : keyset) {
+            keylist[i] = n;
+            i++;
+        }
+        Arrays.sort(keylist);
+
+        for (i = 0; i < keylist.length; i++)
+            if (pToB.get(keylist[i]) == -1)
+                pToB.put(keylist[i], pToB.get(keylist[i - 1]));
+
+        int[] res = new int[queries.length];
+        for (i = 0; i < queries.length; i++) {
+            res[i] = pToB.get(queries[i]);
+        }
+
+        return res;
+    }
+}
+```
+
+> Runtime: 102 ms, faster than 40.96% of Java online submissions for Most Beautiful Item for Each Query.
+>
+> Memory Usage: 141.2 MB, less than 12.92% of Java online submissions for Most Beautiful Item for Each Query.
