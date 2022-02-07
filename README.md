@@ -36,13 +36,13 @@ public class Solution {
 }
 ```
 
-> Runtime: 56 ms, faster than 29.63% of Java online submissions for Two Sum.  
-> Memory Usage: 45.3 MB, less than 8.98% of Java online submissions for Two Sum.
+> Runtime: **56 ms**, faster than **29.63%** of Java online submissions for Two Sum.  
+> Memory Usage: **45.3 MB**, less than **8.98%** of Java online submissions for Two Sum.
 
 ## Problem 2: Add Two Numbers
 
-> Runtime: 4 ms, faster than 44.47% of Java online submissions for Add Two Numbers.
-> Memory Usage: 47.6 MB, less than 11.04% of Java online submissions for Add Two Numbers.
+> Runtime: **4 ms**, faster than **44.47%** of Java online submissions for Add Two Numbers.
+> Memory Usage: **47.6 MB**, less than **11.04%** of Java online submissions for Add Two Numbers.
 
 ## Problem 23: Merge Sorted List
 
@@ -52,9 +52,9 @@ public class Solution {
 
 This algorithm is a minimum-select algorithm. Given `n` sorted linked-lists, the resulting root is determined by comparing all of the first elements of each linked list. The next element in the resultant list is found by running the same algorithm, replacing `lists[i]` with `lists[i].next`.
 
-> Runtime: 374 ms, faster than 5.02% of Java online submissions for Merge k Sorted Lists.
+> Runtime: **374 ms**, faster than **5.02%** of Java online submissions for Merge k Sorted Lists.
 >
-> Memory Usage: 48 MB, less than 5.33% of Java online submissions for Merge k Sorted Lists.
+> Memory Usage: **48 MB**, less than **5.33%** of Java online submissions for Merge k Sorted Lists.
 
 ## Problem 164: Maximum Gap
 
@@ -80,8 +80,8 @@ public class Solution {
 }
 ```
 
-> Runtime: 58 ms, faster than 35.92% of Java online submissions for Maximum Gap.  
-> Memory Usage: 74.5 MB, less than 55.62% of Java online submissions for Maximum Gap.
+> Runtime: **58 ms**, faster than **35.92%** of Java online submissions for Maximum Gap.  
+> Memory Usage: **74.5 MB**, less than **55.62%** of Java online submissions for Maximum Gap.
 
 ## Problem 438: Anagrams
 
@@ -127,9 +127,9 @@ public class Solution {
 }
 ```
 
-> Runtime: 1514 ms, faster than 5.52% of Java online submissions for Find All Anagrams in a String.
+> Runtime: **1514 ms**, faster than **5.52%** of Java online submissions for Find All Anagrams in a String.
 >
-> Memory Usage: 43.5 MB, less than 54.76% of Java online submissions for Find All Anagrams in a String.
+> Memory Usage: **43.5 MB**, less than **54.76%** of Java online submissions for Find All Anagrams in a String.
 
 ## Problem 1847: Closest Room
 
@@ -215,6 +215,6 @@ class Solution {
 }
 ```
 
-> Runtime: 102 ms, faster than 40.96% of Java online submissions for Most Beautiful Item for Each Query.
+> Runtime: **102 ms**, faster than **40.96%** of Java online submissions for Most Beautiful Item for Each Query.
 >
-> Memory Usage: 141.2 MB, less than 12.92% of Java online submissions for Most Beautiful Item for Each Query.
+> Memory Usage: **141.2 MB**, less than **12.92%** of Java online submissions for Most Beautiful Item for Each Query.
