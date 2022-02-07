@@ -20,26 +20,14 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 **✅ Solution 1**
 
-The algorithm for this solution was very straightforward and optimization was easy. Simply begin by iterating through the array and finding the difference between this value and the target. Then select all further elements and compare them to the difference. If they are the same then return both indices.
-
-```java
-public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        for (int i = 0; i < nums.length - 1; i++) {
-            int find = target - nums[i];
-            for (int j = i + 1; j < nums.length; j++)
-                if (nums[j] == find)
-                    return new int[] { i, j };
-        }
-        return null;
-    }
-}
-```
+![](README/images/TwoSumSolution1.png)
 
 > Runtime: **56 ms**, faster than **29.63%** of Java online submissions for Two Sum.  
 > Memory Usage: **45.3 MB**, less than **8.98%** of Java online submissions for Two Sum.
 
 ## Problem 2: Add Two Numbers
+
+![](README/images/AddTwoNumbersSolution1.png)
 
 > Runtime: **4 ms**, faster than **44.47%** of Java online submissions for Add Two Numbers.
 > Memory Usage: **47.6 MB**, less than **11.04%** of Java online submissions for Add Two Numbers.
