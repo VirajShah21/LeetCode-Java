@@ -8,9 +8,10 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 1.  [Problem 438: Anagrams](#problem-438-anagrams)
 2.  [Problem 2070: Most Beautiful Item for Each Query](#problem-2070-most-beautiful-item-for-each-query)
-3.  [1847: Closest Room](#1847-closest-room)
-4.  [23: Merge Sorted List](#23-merge-sorted-list)
-5.  [1: Two Sum](#1-two-sum)
+3.  [Problem 1847: Closest Room](#problem-1847-closest-room)
+4.  [Problem 23: Merge Sorted List](#problem-23-merge-sorted-list)
+5.  [Problem 1: Two Sum](#problem-1-two-sum)
+6.  [Problem 164: Maximum Gap](#problem-164-maximum-gap)
 
 ## Problem 438: Anagrams
 
@@ -140,7 +141,7 @@ class Solution {
 >
 > Memory Usage: 141.2 MB, less than 12.92% of Java online submissions for Most Beautiful Item for Each Query.
 
-## 1847: Closest Room
+## Problem 1847: Closest Room
 
 > https://leetcode.com/problems/closest-room/
 
@@ -148,7 +149,7 @@ class Solution {
 
 Could not find an efficient solution
 
-## 23: Merge Sorted List
+## Problem 23: Merge Sorted List
 
 > https://leetcode.com/problems/merge-k-sorted-lists/
 
@@ -160,7 +161,7 @@ This algorithm is a minimum-select algorithm. Given `n` sorted linked-lists, the
 >
 > Memory Usage: 48 MB, less than 5.33% of Java online submissions for Merge k Sorted Lists.
 
-## 1: Two Sum
+## Problem 1: Two Sum
 
 > [Two Sum on LeetCode](https://leetcode.com/problems/two-sum/)
 
@@ -185,7 +186,7 @@ public class Solution {
 > Runtime: 56 ms, faster than 29.63% of Java online submissions for Two Sum.  
 > Memory Usage: 45.3 MB, less than 8.98% of Java online submissions for Two Sum.
 
-## 164: Maximum Gap
+## Problem 164: Maximum Gap
 
 **✅ Solution 1**
 
