@@ -151,3 +151,25 @@ This algorithm is a minimum-select algorithm. Given `n` sorted linked-lists, the
 > Runtime: 374 ms, faster than 5.02% of Java online submissions for Merge k Sorted Lists.
 >
 > Memory Usage: 48 MB, less than 5.33% of Java online submissions for Merge k Sorted Lists.
+
+## 1: Two Sum
+
+> [Two Sum on LeetCode](https://leetcode.com/problems/two-sum/)
+
+**✅ Solution 1**
+
+The algorithm for this solution was very straightforward and optimization was easy. Simply begin by iterating through the array and finding the difference between this value and the target. Then select all further elements and compare them to the difference. If they are the same then return both indices.
+
+```java
+public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            int find = target - nums[i];
+            for (int j = i + 1; j < nums.length; j++)
+                if (nums[j] == find)
+                    return new int[] { i, j };
+        }
+        return null;
+    }
+}
+```
