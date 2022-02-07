@@ -176,3 +176,30 @@ public class Solution {
 
 > Runtime: 56 ms, faster than 29.63% of Java online submissions for Two Sum.  
 > Memory Usage: 45.3 MB, less than 8.98% of Java online submissions for Two Sum.
+
+## 164: Maximum Gap
+
+**✅ Solution 1**
+
+This is a **hard** problem on LeetCode, but its actually pretty simple. Sort the list, then iterate from `1` to `n-1` and check if `a[i + 1] - a[i]` is greater than the `max`. If it is, replace max with this value.
+
+```java
+public class Solution {
+    public int maximumGap(int[] nums) {
+        if (nums.length < 2)
+            return 0;
+        Arrays.sort(nums);
+        int max = 0;
+        int diff;
+        for (int i = 0; i < nums.length - 1; i++) {
+            diff = nums[i + 1] - nums[i];
+            if (diff > max)
+                max = diff;
+        }
+        return max;
+    }
+}
+```
+
+> Runtime: 58 ms, faster than 35.92% of Java online submissions for Maximum Gap.  
+> Memory Usage: 74.5 MB, less than 55.62% of Java online submissions for Maximum Gap.
