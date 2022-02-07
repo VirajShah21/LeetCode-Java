@@ -173,3 +173,6 @@ public class Solution {
     }
 }
 ```
+
+> Runtime: 56 ms, faster than 29.63% of Java online submissions for Two Sum.  
+> Memory Usage: 45.3 MB, less than 8.98% of Java online submissions for Two Sum.
