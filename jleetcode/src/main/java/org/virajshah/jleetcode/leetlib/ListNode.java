@@ -7,12 +7,12 @@ public class ListNode {
     /**
      * The value stored in this node
      */
-    int val;
+    public int val;
 
     /**
      * A pointer to the next node in the list
      */
-    ListNode next;
+    public ListNode next;
 
     /**
      * Constructs ListNode{val=0 next=null}

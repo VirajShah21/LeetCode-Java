@@ -7,11 +7,12 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 ## Table of Contents
 
 1.  [Problem 1: Two Sum](#problem-1-two-sum)
-2.  [Problem 23: Merge Sorted List](#problem-23-merge-sorted-list)
-3.  [Problem 164: Maximum Gap](#problem-164-maximum-gap)
-4.  [Problem 438: Anagrams](#problem-438-anagrams)
-5.  [Problem 1847: Closest Room](#problem-1847-closest-room)
-6.  [Problem 2070: Most Beautiful Item for Each Query](#problem-2070-most-beautiful-item-for-each-query)
+2.  [Problem 2: Add Two Numbers](#problem-2-add-two-numbers)
+3.  [Problem 23: Merge Sorted List](#problem-23-merge-sorted-list)
+4.  [Problem 164: Maximum Gap](#problem-164-maximum-gap)
+5.  [Problem 438: Anagrams](#problem-438-anagrams)
+6.  [Problem 1847: Closest Room](#problem-1847-closest-room)
+7.  [Problem 2070: Most Beautiful Item for Each Query](#problem-2070-most-beautiful-item-for-each-query)
 
 ## Problem 1: Two Sum
 
@@ -37,6 +38,11 @@ public class Solution {
 
 > Runtime: 56 ms, faster than 29.63% of Java online submissions for Two Sum.  
 > Memory Usage: 45.3 MB, less than 8.98% of Java online submissions for Two Sum.
+
+## Problem 2: Add Two Numbers
+
+> Runtime: 4 ms, faster than 44.47% of Java online submissions for Add Two Numbers.
+> Memory Usage: 47.6 MB, less than 11.04% of Java online submissions for Add Two Numbers.
 
 ## Problem 23: Merge Sorted List
 
