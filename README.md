@@ -6,12 +6,76 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 ## Table of Contents
 
-1.  [Problem 438: Anagrams](#problem-438-anagrams)
-2.  [Problem 2070: Most Beautiful Item for Each Query](#problem-2070-most-beautiful-item-for-each-query)
-3.  [Problem 1847: Closest Room](#problem-1847-closest-room)
-4.  [Problem 23: Merge Sorted List](#problem-23-merge-sorted-list)
-5.  [Problem 1: Two Sum](#problem-1-two-sum)
-6.  [Problem 164: Maximum Gap](#problem-164-maximum-gap)
+1.  [Problem 1: Two Sum](#problem-1-two-sum)
+2.  [Problem 23: Merge Sorted List](#problem-23-merge-sorted-list)
+3.  [Problem 164: Maximum Gap](#problem-164-maximum-gap)
+4.  [Problem 438: Anagrams](#problem-438-anagrams)
+5.  [Problem 1847: Closest Room](#problem-1847-closest-room)
+6.  [Problem 2070: Most Beautiful Item for Each Query](#problem-2070-most-beautiful-item-for-each-query)
+
+## Problem 1: Two Sum
+
+> [Two Sum on LeetCode](https://leetcode.com/problems/two-sum/)
+
+**✅ Solution 1**
+
+The algorithm for this solution was very straightforward and optimization was easy. Simply begin by iterating through the array and finding the difference between this value and the target. Then select all further elements and compare them to the difference. If they are the same then return both indices.
+
+```java
+public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            int find = target - nums[i];
+            for (int j = i + 1; j < nums.length; j++)
+                if (nums[j] == find)
+                    return new int[] { i, j };
+        }
+        return null;
+    }
+}
+```
+
+> Runtime: 56 ms, faster than 29.63% of Java online submissions for Two Sum.  
+> Memory Usage: 45.3 MB, less than 8.98% of Java online submissions for Two Sum.
+
+## Problem 23: Merge Sorted List
+
+> https://leetcode.com/problems/merge-k-sorted-lists/
+
+**Solution 1**
+
+This algorithm is a minimum-select algorithm. Given `n` sorted linked-lists, the resulting root is determined by comparing all of the first elements of each linked list. The next element in the resultant list is found by running the same algorithm, replacing `lists[i]` with `lists[i].next`.
+
+> Runtime: 374 ms, faster than 5.02% of Java online submissions for Merge k Sorted Lists.
+>
+> Memory Usage: 48 MB, less than 5.33% of Java online submissions for Merge k Sorted Lists.
+
+## Problem 164: Maximum Gap
+
+**✅ Solution 1**
+
+This is a **hard** problem on LeetCode, but its actually pretty simple. Sort the list, then iterate from `1` to `n-1` and check if `a[i + 1] - a[i]` is greater than the `max`. If it is, replace max with this value.
+
+```java
+public class Solution {
+    public int maximumGap(int[] nums) {
+        if (nums.length < 2)
+            return 0;
+        Arrays.sort(nums);
+        int max = 0;
+        int diff;
+        for (int i = 0; i < nums.length - 1; i++) {
+            diff = nums[i + 1] - nums[i];
+            if (diff > max)
+                max = diff;
+        }
+        return max;
+    }
+}
+```
+
+> Runtime: 58 ms, faster than 35.92% of Java online submissions for Maximum Gap.  
+> Memory Usage: 74.5 MB, less than 55.62% of Java online submissions for Maximum Gap.
 
 ## Problem 438: Anagrams
 
@@ -60,6 +124,14 @@ public class Solution {
 > Runtime: 1514 ms, faster than 5.52% of Java online submissions for Find All Anagrams in a String.
 >
 > Memory Usage: 43.5 MB, less than 54.76% of Java online submissions for Find All Anagrams in a String.
+
+## Problem 1847: Closest Room
+
+> https://leetcode.com/problems/closest-room/
+
+**Solution 1**
+
+Could not find an efficient solution
 
 ## Problem 2070: Most Beautiful Item for Each Query
 
@@ -140,75 +212,3 @@ class Solution {
 > Runtime: 102 ms, faster than 40.96% of Java online submissions for Most Beautiful Item for Each Query.
 >
 > Memory Usage: 141.2 MB, less than 12.92% of Java online submissions for Most Beautiful Item for Each Query.
-
-## Problem 1847: Closest Room
-
-> https://leetcode.com/problems/closest-room/
-
-**Solution 1**
-
-Could not find an efficient solution
-
-## Problem 23: Merge Sorted List
-
-> https://leetcode.com/problems/merge-k-sorted-lists/
-
-**Solution 1**
-
-This algorithm is a minimum-select algorithm. Given `n` sorted linked-lists, the resulting root is determined by comparing all of the first elements of each linked list. The next element in the resultant list is found by running the same algorithm, replacing `lists[i]` with `lists[i].next`.
-
-> Runtime: 374 ms, faster than 5.02% of Java online submissions for Merge k Sorted Lists.
->
-> Memory Usage: 48 MB, less than 5.33% of Java online submissions for Merge k Sorted Lists.
-
-## Problem 1: Two Sum
-
-> [Two Sum on LeetCode](https://leetcode.com/problems/two-sum/)
-
-**✅ Solution 1**
-
-The algorithm for this solution was very straightforward and optimization was easy. Simply begin by iterating through the array and finding the difference between this value and the target. Then select all further elements and compare them to the difference. If they are the same then return both indices.
-
-```java
-public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        for (int i = 0; i < nums.length - 1; i++) {
-            int find = target - nums[i];
-            for (int j = i + 1; j < nums.length; j++)
-                if (nums[j] == find)
-                    return new int[] { i, j };
-        }
-        return null;
-    }
-}
-```
-
-> Runtime: 56 ms, faster than 29.63% of Java online submissions for Two Sum.  
-> Memory Usage: 45.3 MB, less than 8.98% of Java online submissions for Two Sum.
-
-## Problem 164: Maximum Gap
-
-**✅ Solution 1**
-
-This is a **hard** problem on LeetCode, but its actually pretty simple. Sort the list, then iterate from `1` to `n-1` and check if `a[i + 1] - a[i]` is greater than the `max`. If it is, replace max with this value.
-
-```java
-public class Solution {
-    public int maximumGap(int[] nums) {
-        if (nums.length < 2)
-            return 0;
-        Arrays.sort(nums);
-        int max = 0;
-        int diff;
-        for (int i = 0; i < nums.length - 1; i++) {
-            diff = nums[i + 1] - nums[i];
-            if (diff > max)
-                max = diff;
-        }
-        return max;
-    }
-}
-```
-
-> Runtime: 58 ms, faster than 35.92% of Java online submissions for Maximum Gap.  
-> Memory Usage: 74.5 MB, less than 55.62% of Java online submissions for Maximum Gap.
