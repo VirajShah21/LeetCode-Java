@@ -4,6 +4,14 @@
 
 I usually solve math problems in Python, but I thought to myself, "how can I make my life harder?"... and I found the solution: Solve LeetCode problems using Java
 
+## Table of Contents
+
+1.  [Problem 438: Anagrams](#problem-438-anagrams)
+2.  [Problem 2070: Most Beautiful Item for Each Query](#problem-2070-most-beautiful-item-for-each-query)
+3.  [1847: Closest Room](#1847-closest-room)
+4.  [23: Merge Sorted List](#23-merge-sorted-list)
+5.  [1: Two Sum](#1-two-sum)
+
 ## Problem 438: Anagrams
 
 🆇 **First Solution**
