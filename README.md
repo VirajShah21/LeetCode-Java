@@ -77,3 +77,5 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 >
 > Runtime: **102 ms**, faster than **40.96%** of Java online submissions for Most Beautiful Item for Each Query.  
 > Memory Usage: **141.2 MB**, less than **12.92%** of Java online submissions for Most Beautiful Item for Each Query.
+
+I will create the flowchart for the algorithm later.
