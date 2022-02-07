@@ -1,5 +1,8 @@
 package org.virajshah.jleetcode.leetlib;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * LeetCode implementation of a singly-linked list.
  */
@@ -37,5 +40,23 @@ public class ListNode {
     public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
+    }
+
+    /**
+     * NOT INCLUDED IN LEETCODE. This should only be used for testing. Converts the
+     * linked list to an array list.
+     * 
+     * @return The List implementation of the linked list.
+     */
+    public List<Integer> toArrayList() {
+        List<Integer> list = new ArrayList<>();
+        ListNode curr = this;
+
+        do {
+            list.add(curr.val);
+            curr = curr.next;
+        } while (curr != null);
+
+        return list;
     }
 }

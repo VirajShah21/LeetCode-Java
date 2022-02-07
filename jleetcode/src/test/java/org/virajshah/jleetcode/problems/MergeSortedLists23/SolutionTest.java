@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.virajshah.jleetcode.problems.MergeSortedLists23.Solution.ListNode;
+import org.virajshah.jleetcode.leetlib.ListNode;
 
 public class SolutionTest {
     private Solution solution;

@@ -1,36 +1,8 @@
 package org.virajshah.jleetcode.problems.MergeSortedLists23;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.virajshah.jleetcode.leetlib.ListNode;
 
 class Solution {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {}
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        public List<Integer> toArrayList() {
-            List<Integer> out = new ArrayList<>();
-            ListNode curr = this;
-            out.add(curr.val);
-            while (curr.next != null) {
-                curr = curr.next;
-                out.add(curr.val);
-            }
-            return out;
-        }
-    }
-
     public ListNode mergeKLists(ListNode[] lists) {
         ListNode root = new ListNode();
         ListNode last = root;
