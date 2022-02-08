@@ -25,6 +25,9 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 ![](README/images/TwoSumSolution1.png)
 
+| [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) | [![](README/images/Next.png)](#problem-2-add-two-numbers) |
+| -------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------- |
+
 ## Problem 2: Add Two Numbers
 
 > [Add Two Numbers on LeetCode](https://leetcode.com/problems/add-two-numbers/)  
