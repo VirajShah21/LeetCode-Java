@@ -8,7 +8,7 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 1.  [Problem 1: Two Sum](#problem-1-two-sum)
 2.  [Problem 2: Add Two Numbers](#problem-2-add-two-numbers)
-3.  Problem 3: Longest Substring Without Repeating Characters
+3.  [Problem 3: Longest Substring Without Repeating Characters](#problem-3-longest-substring-without-repeating-character)
 4.  [Problem 23: Merge Sorted List](#problem-23-merge-sorted-list)
 5.  [Problem 164: Maximum Gap](#problem-164-maximum-gap)
 6.  [Problem 438: Anagrams](#problem-438-anagrams)
@@ -39,11 +39,11 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 ## Problem 3: Longest Substring Without Repeating Characters
 
-> [Longest Substring Without Repeating Characters on LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+> [Longest Substring Without Repeating Characters on LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  
 > Solution (Code)  
 > Solution (Test)
 >
-> Runtime: **14 ms**, faster than **42.57%** of Java online submissions for Longest Substring Without Repeating Characters.
+> Runtime: **14 ms**, faster than **42.57%** of Java online submissions for Longest Substring Without Repeating Characters.  
 > Memory Usage: **44.5 MB**, less than **23.28%** of Java online submissions for Longest Substring Without Repeating Characters.
 
 ![](README/images/LongestSubstringWithoutRepeatingCharactersSolution.png)
