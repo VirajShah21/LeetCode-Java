@@ -8,12 +8,11 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 1.  [Problem 1: Two Sum](#problem-1-two-sum)
 2.  [Problem 2: Add Two Numbers](#problem-2-add-two-numbers)
-3.  [Problem 3: Longest Substring Without Repeating Characters](#problem-3-longest-substring-without-repeating-character)
-4.  [Problem 23: Merge Sorted List](#problem-23-merge-sorted-list)
+3.  [Problem 3: Longest Substring Without Repeating Characters](#problem-3-longest-substring-without-repeating-characters)
+4.  [Problem 23: Merge K Sorted Lists](#problem-23-merge-k-sorted-lists)
 5.  [Problem 164: Maximum Gap](#problem-164-maximum-gap)
-6.  [Problem 438: Anagrams](#problem-438-anagrams)
-7.  [Problem 1847: Closest Room](#problem-1847-closest-room)
-8.  [Problem 2070: Most Beautiful Item for Each Query](#problem-2070-most-beautiful-item-for-each-query)
+6.  [Problem 438: Find All Anagrams in a String](#problem-438-find-all-anagrams-in-a-string)
+7.  [Problem 2070: Most Beautiful Item for Each Query](#problem-2070-most-beautiful-item-for-each-query)
 
 ## Problem 1: Two Sum
 
@@ -48,9 +47,9 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 ![](README/images/LongestSubstringWithoutRepeatingCharactersSolution.png)
 
-## Problem 23: Merge K Sorted List
+## Problem 23: Merge K Sorted Lists
 
-> [Merge K Sorted List on LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/)  
+> [Merge K Sorted Lists on LeetCode](https://leetcode.com/problems/merge-k-sorted-lists/)  
 > [Solution (Code)](jleetcode/src/main/java/org/virajshah/jleetcode/problems/MergeSortedLists23/Solution.java)  
 > [Solution (Test)](jleetcode/src/test/java/org/virajshah/jleetcode/problems/MergeSortedLists23/SolutionTest.java)
 >
