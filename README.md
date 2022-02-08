@@ -25,8 +25,8 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 ![](README/images/TwoSumSolution1.png)
 
-| [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) | [![](README/images/Next.png)](#problem-2-add-two-numbers) |
-| -------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------- |
+| [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) |
+| -------------------------------------------- | ------------------------------------------------ |
 
 ## Problem 2: Add Two Numbers
 
@@ -39,6 +39,9 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 ![](README/images/AddTwoNumbersSolution1.png)
 
+| [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) |
+| -------------------------------------------- | ------------------------------------------------ |
+
 ## Problem 3: Longest Substring Without Repeating Characters
 
 > [Longest Substring Without Repeating Characters on LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  
@@ -49,6 +52,9 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 > Memory Usage: **44.5 MB**, less than **23.28%** of Java online submissions for Longest Substring Without Repeating Characters.
 
 ![](README/images/LongestSubstringWithoutRepeatingCharactersSolution.png)
+
+| [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) |
+| -------------------------------------------- | ------------------------------------------------ |
 
 ## Problem 23: Merge K Sorted Lists
 
@@ -61,6 +67,9 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 ![](README/images/MergeKSortedListsSolution.png)
 
+| [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) |
+| -------------------------------------------- | ------------------------------------------------ |
+
 ## Problem 164: Maximum Gap
 
 > [Maximum Gap on LeetCode](https://leetcode.com/problems/maximum-gap/)  
@@ -71,6 +80,9 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 > Memory Usage: **74.5 MB**, less than **55.62%** of Java online submissions for Maximum Gap.
 
 ![](README/images/MaximumGapSolution.png)
+
+| [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) |
+| -------------------------------------------- | ------------------------------------------------ |
 
 ## Problem 438: Find All Anagrams in a String
 
@@ -83,6 +95,9 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 
 ![](README/images/FindAllAnagramsSolution.png)
 
+| [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) |
+| -------------------------------------------- | ------------------------------------------------ |
+
 ## Problem 2070: Most Beautiful Item for Each Query
 
 > [Most Beautiful Item for Each Query on LeetCode](https://leetcode.com/problems/most-beautiful-item-for-each-query/)  
@@ -93,3 +108,6 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 > Memory Usage: **141.2 MB**, less than **12.92%** of Java online submissions for Most Beautiful Item for Each Query.
 
 I will create the flowchart for the algorithm later.
+
+| [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) |
+| -------------------------------------------- | ------------------------------------------------ |
