@@ -45,13 +45,27 @@ I usually solve math problems in Python, but I thought to myself, "how can I mak
 ## Problem 3: Longest Substring Without Repeating Characters
 
 > [Longest Substring Without Repeating Characters on LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  
-> Solution (Code)  
-> Solution (Test)
+> [Solution (Code)](jleetcode/src/main/java/org/virajshah/jleetcode/problems/LongestSubstring3/Solution.java)  
+> [Solution (Test)](jleetcode/src/test/java/org/virajshah/jleetcode/problems/LongestSubstring3/SolutionTest.java)
 >
 > Runtime: **14 ms**, faster than **42.57%** of Java online submissions for Longest Substring Without Repeating Characters.  
 > Memory Usage: **44.5 MB**, less than **23.28%** of Java online submissions for Longest Substring Without Repeating Characters.
 
 ![](README/images/LongestSubstringWithoutRepeatingCharactersSolution.png)
+
+| [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) |
+| -------------------------------------------- | ------------------------------------------------ |
+
+## Problem 4: Median of Two Sorted Arrays
+
+> [Median of Two Sorted Array](https://leetcode.com/problems/median-of-two-sorted-arrays/)  
+> [Solution (Code)](jleetcode/src/main/java/org/virajshah/jleetcode/problems/MedianOfTwoSortedArrays4/Solution.java)  
+> [Solution (Test)](jleetcode/src/test/java/org/virajshah/jleetcode/problems/MedianOfTwoSortedArrays4/SolutionTest.java)
+>
+> Runtime: **10 ms**, faster than **15.06%** of Java online submissions for Median of Two Sorted Arrays.
+> Memory Usage: **49.9 MB**, less than **9.97%** of Java online submissions for Median of Two Sorted Arrays.
+
+![](README/images/MedianOfTwoSortedArrays.png)
 
 | [![](README/images/Top.png)](#leetcode-java) | [![](README/images/TOC.png)](#table-of-contents) |
 | -------------------------------------------- | ------------------------------------------------ |
